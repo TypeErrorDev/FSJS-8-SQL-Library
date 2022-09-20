@@ -1,0 +1,63 @@
+Setup and Initialize Project
+    Meets Expectations:
+        ☐ The `.gitignore` file is in place and the `node_modules` folder is not stored in the repo
+        ☐ Running `npm install` adds all necessary dependencies
+        ☐ Running `npm start` launches the app
+
+Models
+    Meets Expectations:
+        ☐ Project includes the following Sequelize Model and properties:
+            ☐ Book
+                ☐ Title - `string`
+                ☐ Author - `string`
+                ☐ Genre - `string`
+                ☐ Year - `integer`
+        ☐ Uses the appropriate Model validation to ensure that the `title` and `author` properties will have values when the form is submitted
+
+Routes
+    Meets Expectations:
+        ☐ Project contains at least the following routes:
+            ☐ / - `get`
+            ☐ /books - `get`
+            ☐ /books/new - `get`
+            ☐ /books/new - `post`
+            ☐ /books/:id - `get`
+            ☐ /books/:id - `post`
+            ☐ /books/:id/delete - `post`
+
+Views
+    Meets Expectations:
+        ☐ Project contains at least the following views:
+            ☐ layout.pug
+            ☐ index.pug
+            ☐ new-book.pug
+            ☐ update-book.pug
+            ☐ error.pug
+            ☐ page-not-found.pug
+    
+    Exceeds Expectations:
+        ☐ Main book list has search feature
+        ☐ Search works for all of the following fields
+            ☐ Title
+            ☐ Author
+            ☐ Genre
+            ☐ Year
+        ☐ Search is case insensitive
+        ☐ Search works for partial matches on strings
+        ☐ Main book list has pagination feature
+
+Form Fields
+    Meets Expectations:
+        ☐ If `title` or `author` fields are empty, form will not submit and page shows friendly error message
+        ☐ Forms employ Sequelize Model validation rather than HTML's built in validation
+        ☐ Clicking on an input's label brings focus to corresponding input
+
+Errors
+    Meets Expectations:
+        ☐ If routing to a non-existent book id, project uses a `global error handler` to render a friendly "Page Not Found" or "error" page
+        ☐ If navigation to a non-existent route like `/noroute`, the project renders a user friendly "Page Not Found" page
+
+Styles and Layout
+    Meets Expectations:
+        ☐ Project uses supplied styles
+        ☐ General layout matches example markup pages
